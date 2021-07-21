@@ -1,0 +1,8 @@
+version: 3.9
+services:
+  server1:
+    image: ubuntu
+    ports:
+      - 8080:8080
+  server2:
+    image: ubuntu
