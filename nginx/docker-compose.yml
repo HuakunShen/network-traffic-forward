@@ -1,8 +1,12 @@
-version: 3.9
+version: "3.9"
 services:
   server1:
     image: nginx
     ports:
       - 8080:80
+    volumes: 
+      - ./server1.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - server2
   server2:
     image: nginx
